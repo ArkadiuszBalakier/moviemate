@@ -5,16 +5,28 @@ import React from "react";
 
 export const AllRoutes = () => {
   return (
-    <>
+    <div className="dark:bg-gray-800">
       <Routes>
-        <Route path="/" element={<MovieList />} />
-        <Route path="/movie/:id" element={<MovieDetail />} />
-        <Route path="/movies/popular" element={<MovieList />} />
-        <Route path="/movies/top" element={<MovieList />} />
-        <Route path="/movies/upcoming" element={<MovieList />} />
-        <Route path="search" element={<Search />} />
+        <Route
+          path=""
+          element={<MovieList apiPath="movie/now_playing" title="Home" />}
+        />
+        <Route path="movie/:id" element={<MovieDetail />} />
+        <Route
+          path="movies/popular"
+          element={<MovieList apiPath="movie/popular" title="Popular" />}
+        />
+        <Route
+          path="movies/top"
+          element={<MovieList apiPath="movie/top_rated" title="Top Rated" />}
+        />
+        <Route
+          path="movies/upcoming"
+          element={<MovieList apiPath="movie/upcoming" title="upcoming" />}
+        />
+        <Route path="search" element={<Search apiPath="search/movie" />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </>
+    </div>
   );
 };
