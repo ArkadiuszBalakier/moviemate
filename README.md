@@ -1,3 +1,17 @@
+# Moviemate
+
+## Overview
+Web App that show list of movies. You can search for movie, see top rated , popular or upcoming. Clicking on movie show it details. Dark and light mode.
+
+## Technology
+React JS, tailwind , React Router ,
+
+## Public API
+https://api.themoviedb.org
+
+## Wroking Demo
+https://arczibee-moviemate.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
