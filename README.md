@@ -1,5 +1,5 @@
 # Moviemate
-
+project created with the help of the course https://www.udemy.com/course/complete-reactjs-masterclass, I'm putting it here as a Github training.
 ## Overview
 Web App that show list of movies. You can search for movie, see top rated , popular or upcoming. Clicking on movie show it details. Dark and light mode.
 
